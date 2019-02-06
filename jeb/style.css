@@ -1,0 +1,28 @@
+/* CSS Document */
+body {
+	background-color: #171717;
+}
+.canvas {
+	width: 1198px;
+	height: 602px;
+	background-color: #000000;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	box-shadow: 5px 5px 10px 2px #0b0b0b;
+}
+.canvas img {
+	position: absolute;
+}
+.jebvid {
+	width: 903px;
+	height: 602px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	visibility: hidden;
+	background-color: #000000;
+}

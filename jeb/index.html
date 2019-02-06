@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JEB.mihome</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<link rel="shortcut icon" href="favicon.ico">
+<script language="javascript" type="text/javascript" src="jquery-2.2.4.min.js"></script>
+<script language="javascript" type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+<div class="canvas">
+<img src="img/manny.jpg">
+<img src="img/lifebar.png">
+<img src="img/objective.png">
+<img src="img/box.png">
+<img src="img/respect.png" class="respect">
+<img src="img/dp.png">
+<img src="img/gun.png">
+<img src="img/kfc.png">
+<img src="img/checkbox.png">
+<img src="img/check.png" usemap="#checkMap" id="check">
+<map name="checkMap">
+  <area shape="rect" coords="913,521,1026,549" href="javascript:notJebPressed()" onClick="notJebPressed()">
+  <area shape="rect" coords="913,559,987,587" href="javascript:jebPressed()" onClick="jebPressed()">
+</map>
+<video class="jebvid" id="jebvid">
+	<source src="vid/charlie.mp4" type="video/mp4">
+</video>
+<audio id="jebaud">
+	<source src="aud/anime.mp3" type="audio/mpeg">
+</audio>
+</div>
+</body>
+</html>
