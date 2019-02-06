@@ -1,7 +1,7 @@
 # dum html projects
 
 ## jeb
-https://jeb.mof.moe/
+[Live Website](https://jeb.mof.moe/) | [Project Home](jeb/)
 Press F to pay respect to manny.
 
 ## f1
@@ -9,9 +9,9 @@ WIP
 F1 Poome
 
 ## fuckoff
-WIP
+WIP | [Project Home](fuckoff/)
 Peter saying fuck off.
 
 ## nknb
-https://nknb.mof.moe/
-See MoF-Dev/nknb
+[Live Website](https://nknb.mof.moe/) | [Project Home](/MoF-Dev/nknb/)
+NgeanRank&trade;
