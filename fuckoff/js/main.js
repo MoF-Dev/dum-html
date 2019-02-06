@@ -18,8 +18,8 @@ allFonts.forEach(function(font){
 		console.log(`Font ${font} is not available.`);
 	});
 })
-const sizeMin = 20;
-const sizeMax = 60;
+const sizeMin = 15;
+const sizeMax = 40;
 
 const fuckOffs = ["fuckoff", "Fuck Off", "FUCK OFF", "fUCk oFF"];
 
@@ -109,6 +109,14 @@ $(window).ready(function(){
 	setTimeout(function(){
 		if(!doFuck) fuck();
 	}, 2000);
+	canvas.$.click(function(e){
+		// rn its just toggling
+		if(doFuck){
+			unfuck();
+		} else {
+			fuck();
+		}
+	});
 });
 
 /**
