@@ -1,5 +1,5 @@
 const firstFuckoff = 1;
-const lastFuckoff = 2;
+const lastFuckoff = 7;
 
 const allFonts = [
 	"Arial", "Calibri", "Century Gothic", "Comic Sans", "Consolas", "Courier", "Dejavu Sans", "Dejavu Serif",
@@ -21,7 +21,7 @@ allFonts.forEach(function(font){
 const sizeMin = 15;
 const sizeMax = 40;
 
-const fuckOffs = ["fuckoff", "Fuck Off", "FUCK OFF", "fUCk oFF"];
+const fuckOffs = ["fuckoff", "Fuck Off", "FUCK OFF", "fUCk oFF", "FUCK OFF BJ", "fuck OFF", "Fuck off, idiot"];
 
 // to stop fucking off, call unfuck()
 let doFuck = true;
@@ -78,12 +78,15 @@ for(let i=firstFuckoff; i<=lastFuckoff; i++){
 	$("#fuckoff"+i).bind("ended", function(){
 		console.log("Done fucked off "+i);
 		if(!doFuck) return;
-		const nextFuck = ((i-firstFuckoff)+1)%numFuckoff + firstFuckoff;
+		let nextFuck;
+		do {
+			nextFuck = Math.floor(randBetween(firstFuckoff, lastFuckoff+1));
+		} while(nextFuck==i);
 		console.log("Gonna fuck "+nextFuck);
 		$("#fuckoff"+nextFuck)[0].play();
 	});
 	$("#fuckoff"+i).bind("play", function(){
-		canvas.writeFuck(fuckOffs[Math.floor(Math.random()*fuckOffs.length)]);
+		canvas.writeFuck(fuckOffs[i-1]);
 	});
 }
 
